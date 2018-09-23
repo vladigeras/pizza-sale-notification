@@ -1,0 +1,28 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: masterpizza
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+
+    # mail.ru настройки здесь https://help.mail.ru/mail-help/mailer/popsmtp
+    # хотя с портом 465 (указано по ссылке) не работает
+  mail:
+    host: smtp.mail.ru
+    port: 25
+    username: "mazterpizza777@mail.ru"
+    password: "vxiH541x41"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+logging:
+  file: masterpizza.log
